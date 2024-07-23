@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './navbar.css'
 const Navbar = () => {
   return (
@@ -7,28 +8,28 @@ const Navbar = () => {
         <div className='menu-link'>
             <ul>
                 <li>
-                    <a href='#'>Home</a>
+                <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <a href='#'>Matches</a>
+                <Link to="/">Matches</Link>
                 </li>
                 <li>
-                    <a href='#'>News</a>
+                <Link to="/news">News</Link>
                 </li>
                 <li>
-                    <a href='#'>Articles</a>
+                <Link to="/">Articles</Link>
                 </li>
                 <li>
-                    <a href='#'>Sports</a>
+                <Link to="/">Sports</Link>
                 </li>
                 <li>
-                    <a href='#'>International</a>
+                <Link to="/">International</Link>
                 </li>
                 <li>
-                    <a href='#'>Gallery</a>
+                <Link to="/">Gallery</Link>
                 </li>
                 <li>
-                    <a href='#'>About us</a>
+                <Link to="/">About us</Link>
                 </li>
             </ul>
             <img src='/img/liveupdate.png'  style={{width:'100%'}}/>

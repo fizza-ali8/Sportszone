@@ -1,12 +1,21 @@
 import React from 'react';
-import Navbar from "./components/navbar";
-import Header from "./components/header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import NoPage from "./pages/NoPage";
+import News from './pages/News';
 const App = () => {
   return(
-    <div>
-    <Header/>
-    <Navbar />
-    </div> 
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="news" element={<News />} />
+    
+        <Route path="*" element={<NoPage />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
   );
 };
 
