@@ -1,0 +1,97 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.main-nav {
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: space-around; /* Horizontal alignment */
+}
+
+.menu-link {
+  flex-grow: 1;
+}
+
+.menu-link ul {
+  list-style: none;
+  display: flex;justify-content: space-around;
+   /* Horizontal alignment of list items */
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap; /* Allow items to wrap within the container */
+}
+
+.menu-link ul li {
+  margin: 0 10px;
+}
+
+.menu-link ul li a {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu-link ul li a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.menu-link img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: row; /* Ensure items stay in a row */
+    align-items: center;
+    padding: 10px;
+  }
+
+  .menu-link ul {
+    justify-content: center; /* Center items within the container */
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .menu-link ul li {
+    margin: 0 5px;
+  }
+
+  .menu-link ul li a {
+    font-size: 14px;
+  }
+
+  .menu-link img {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-nav {
+    padding: 5px;
+  }
+
+  .menu-link ul {
+    justify-content: center; /* Center items within the container */
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .menu-link ul li {
+    margin: 0 5px;
+  }
+
+  .menu-link ul li a {
+    font-size: 12px;
+  }
+
+  .menu-link img {
+    margin-top: 5px;
+  }
+}
