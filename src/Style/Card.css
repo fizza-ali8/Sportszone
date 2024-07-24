@@ -1,0 +1,21 @@
+.card {
+  flex: 1 0 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 423px;
+  height:266px; /* Increased height for the images */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-body p {
+  margin: 5px 0;
+}
