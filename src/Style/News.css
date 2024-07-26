@@ -1,7 +1,21 @@
+/* src/Style/News.css */
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   gap: 20px;
   padding: 20px;
-  justify-content: space-between;
+  justify-content: center; /* Center the items */
 }

@@ -1,0 +1,45 @@
+/* src/Style/Footer.css */
+
+.footer {
+    background-color: #115740FF; /* Updated background color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 24px; /* Adjust size as needed */
+    margin-bottom: 20px; /* Create space between icons and first line */
+  }
+  
+  .footer-icons a {
+    color: white; /* Icons color */
+  }
+  
+  .footer-text {
+    margin-bottom: 20px; /* Create space between first and second line */
+    color: #9095A1FF; /* Updated color for the second line */
+  }
+  
+  .footer-links {
+    margin: 5px 0;
+    letter-spacing: 2px; /* Create more space between words */
+    color: rgb(190, 184, 184); /* Updated color for the third and fourth lines */
+  }
+  
+  .footer-links a {
+    color: rgb(190, 184, 184); /* Links color in the third and fourth lines */
+    text-decoration: none;
+    margin: 0 10px; /* Space between links */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+  }
+  
