@@ -29,10 +29,10 @@ const Navbar = () => {
                 <Link to="/">Gallery</Link>
                 </li>
                 <li>
-                <Link to="/">About us</Link>
+                <Link to="/">live stream</Link>
                 </li>
             </ul>
-            <img src='/img/liveupdate.png'  style={{width:'100%'}}/>
+            <img src='/img/liveupdates.png'  style={{width:'100%'}}/>
         </div>
     </nav>
     </>
