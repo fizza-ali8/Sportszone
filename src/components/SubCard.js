@@ -55,7 +55,7 @@ const SubCard = () => {
         React.createElement(Card, { key: index + initialCards.length, card })
       )
     ),
-    React.createElement(Footer, { className: 'footer-expanded' })
+    // React.createElement(Footer, { className: 'footer-expanded' })
   );
 };
 

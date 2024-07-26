@@ -1,24 +1,28 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import NoPage from "./pages/NoPage";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout';
+import Home from './pages/Home.js';
+import NoPage from './pages/NoPage';
 import News from './pages/News';
 import SubCard from './components/SubCard';
+import Matches from './pages/Matches';
 import Footer from './components/Footer';
 
 const App = () => {
-  return(
+  return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout />}>
+      <Layout/>
+        <Routes>
         <Route index element={<Home />} />
-        <Route path="news" element={<News />} />
-        <Route path="subcard" element={<SubCard />} /> {/* Ensure this matches the Card navigation */}
-        <Route path="*" element={<NoPage />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+          <Route path="/home" element={<Home />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/matches" element={<Matches />} />
+          <Route path="/subcard" element={<SubCard />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      
+      <Footer />
+    </BrowserRouter>
   );
 };
 
