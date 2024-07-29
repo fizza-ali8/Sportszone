@@ -4,7 +4,8 @@ import Layout from './pages/Layout';
 import Home from './pages/Home.js';
 import NoPage from './pages/NoPage';
 import News from './pages/News';
-import SubCard from './components/SubCard';
+import Sports from './pages/Sports';
+import NewsDetails from './components/NewsDetails.js';
 import Matches from './pages/Matches';
 import Footer from './components/Footer';
 
@@ -17,7 +18,8 @@ const App = () => {
           <Route path="/home" element={<Home />} />
           <Route path="/news" element={<News />} />
           <Route path="/matches" element={<Matches />} />
-          <Route path="/subcard" element={<SubCard />} />
+          <Route path="/NewsDetails" element={< NewsDetails/>} />
+          <Route path="/sports" element={<Sports/>} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       
