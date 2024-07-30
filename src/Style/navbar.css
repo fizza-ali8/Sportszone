@@ -23,7 +23,7 @@
   justify-content: space-around; /* Horizontal alignment of list items */
   padding: 0;
   margin: 0;
-  flex-wrap: wrap; /* Allow items to wrap within the container */
+  flex-wrap:wrap; /* Allow items to wrap within the container */
 }
 
 .menu-link ul li {
@@ -51,18 +51,11 @@
 /* Styles for the line and text below the navbar */
 .navbar-line {
   position: relative;
-  border-top: 4px solid #115740FF; /* Adjust the color of the line */
-  margin-top: 40px; /* Gap between navbar and line */
-  width: 100%; /* Make the line span the full width */
+
 }
 
 .navbar-text {
   position: absolute;
-  left: 10%; /* Adjust as needed to position text */
-  top: -20px; /* Adjust to vertically align with the line */
-  background-color: white; /* Ensure background matches your design */
-  padding: 0 10px; /* Add some padding for better spacing */
-  font-size: 16px; /* Adjust font size as needed */
   color: #333; /* Adjust text color as needed */
   font-family: 'Roboto', Arial, sans-serif; /* Ensure the font is consistent */
   font-weight: bold;
