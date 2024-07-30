@@ -1,0 +1,32 @@
+.gender-toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  padding: 4px;
+  width: fit-content;
+  margin: auto;
+}
+
+.gender-toggle button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.gender-toggle button.active {
+  background-color: #115740;
+  color: white;
+}
+
+.gender-toggle button:not(.active):hover {
+  background-color: #2f8166;
+  color: #ffffff;
+}

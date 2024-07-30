@@ -1,0 +1,26 @@
+.section-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+  }
+  
+  .section-bar button {
+    padding: 10px 150px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease;
+  }
+  
+  .section-bar button:hover {
+    color: #154734; 
+  }
+  
+  .section-bar button.active {
+    color: #115740; 
+    font-weight: bold;
+    /* border-bottom: 2px solid #006400;  */
+  }
+  
