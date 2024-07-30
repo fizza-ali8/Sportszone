@@ -1,21 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HorizontalScrollView from '../components/HorizontalScrollView';
 import '../Style/Matches.css';
-import MatchData from '../Helper/matchData';
 import ScheduleCard from '../components/ScheduleCard';
+import {
+  cricketData,
+  footballData,
+  basketballData,
+  hockeyData,
+  badmintonData,
+  tennisData,
+  tableTennisData,
+  iceHockeyData,
+  snookerData,
+  poloData,
+  tentPeggingData,
+  kabaddiData,
+} from '../Helper/matchData';
 
-
+const dataMap = {
+  Cricket: cricketData,
+  Football: footballData,
+  Basketball: basketballData,
+  Hockey: hockeyData,
+  Badminton: badmintonData,
+  Tennis: tennisData,
+  'Table Tennis': tableTennisData,
+  'Ice Hockey': iceHockeyData,
+  Snooker: snookerData,
+  Polo: poloData,
+  'Tent Pegging': tentPeggingData,
+  Kabaddi: kabaddiData,
+};
 
 function Matches() {
+  const [selectedSport, setSelectedSport] = useState('Cricket');
+
+  const matchData = dataMap[selectedSport] || [];
+
   return (
     <div className='matches-page'>
       <div className='horizontal-scrollview'>
-        <HorizontalScrollView />
+        <HorizontalScrollView selectedSport={selectedSport} setSelectedSport={setSelectedSport} />
       </div>
       <div className='matches-container'>
         <div className='matches'>
-        {MatchData.map((card, index) => (
-           <ScheduleCard key={index} card={card} />
+          {matchData.map((card, index) => (
+            <ScheduleCard key={index} card={card} />
           ))}
         </div>
       </div>

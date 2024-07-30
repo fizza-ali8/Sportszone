@@ -1,42 +1,58 @@
-/* ScheduleCard.css */
-
-.match-card {
+.schedule-card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border: 1px solid #ddd;
+  align-items: flex-start;
+  padding: 10px 20px;
+  border: 1px solid #ebebeb;
   border-radius: 5px;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .match-info {
   display: flex;
+  flex-direction: column;
+}
+
+.match {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.teams {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .team {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-right: 20px; /* Space between flags and other content */
-}
-
-.team .flag {
-  width: 45px;
-  height: 45px;
   margin-bottom: 10px;
 }
 
-.match-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-left: auto; /* Pushes the match details to the right */
+.team:last-child {
+  margin-bottom: 0;
 }
 
-.match-date, .match-location {
+.flag {
+  width: 40px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 0;
+}
+
+
+
+.match-details {
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.match-location {
+  margin-top: auto; /* No additional styles needed here unless you want to adjust spacing */
 }

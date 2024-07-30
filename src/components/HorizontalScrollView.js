@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../Style/HorizontalScrollView.css';
 
-const HorizontalScrollView = () => {
-  const [selectedItem, setSelectedItem] = useState('Cricket');
-
+const HorizontalScrollView = ({ selectedSport, setSelectedSport }) => {
   const items = [
-    'Cricket', 'Football', 'Basketball', 'Hockey', 'Badminton', 'Tennis', 
+    'Cricket', 'Football', 'Basketball', 'Hockey', 'Badminton', 'Tennis',
     'Table Tennis', 'Ice Hockey', 'Snooker', 'Polo', 'Tent Pegging', 'Kabaddi'
   ];
 
@@ -15,8 +13,8 @@ const HorizontalScrollView = () => {
         {items.map(item => (
           <div 
             key={item} 
-            className={`scroll-item ${selectedItem === item ? 'selected' : ''}`} 
-            onClick={() => setSelectedItem(item)}
+            className={`scroll-item ${selectedSport === item ? 'selected' : ''}`} 
+            onClick={() => setSelectedSport(item)}
           >
             {item}
           </div>
