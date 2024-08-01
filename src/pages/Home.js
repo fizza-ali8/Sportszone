@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import '../Style/Home.css'; // Include Home CSS for Home section styles
 import '../Style/Card.css'; // Include Card CSS for card styles
 import '../Style/News.css'; // Include News CSS for News section styles
-import Card from '../components/NewsCard';
+import NewsCard from '../components/NewsCard';
 import HomeCardData from '../Helper/HomeCardData';
 import cardData from '../Helper/cardData'; // Ensure cardData is used if needed
 
@@ -97,7 +97,7 @@ const Home = () => {
         'div',
         { className: 'container' },
         cardData.map((card, index) =>
-          React.createElement(Card, { key: index, card: card })
+          React.createElement(NewsCard, { key: index, card: card })
         )
       )
     )

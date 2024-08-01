@@ -4,17 +4,17 @@ import Layout from './pages/Layout';
 import Home from './pages/Home.js';
 import NoPage from './pages/NoPage';
 import News from './pages/News';
-import Sports from './pages/Sports';
 import NewsDetails from './components/NewsDetails.js';
 import Matches from './pages/Matches';
+import Sports from './pages/Sports';
 import Footer from './components/Footer';
 import International from './pages/International.js';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Layout/>
-        <Routes>
+      <Layout />
+      <Routes>
         <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/news" element={<News />} />
