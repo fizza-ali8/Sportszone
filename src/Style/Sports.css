@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
    }
+   .horizontal-scrollview {
+    width: 100%; /* Adjust width as needed */
+    margin: 0 0;
+  }
   .main-wrapper{
     display: flex;
     flex-wrap: wrap;
