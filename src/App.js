@@ -4,7 +4,6 @@ import Layout from './pages/Layout';
 import Home from './pages/Home.js';
 import NoPage from './pages/NoPage';
 import News from './pages/News';
-import Sports from './pages/Sports';
 import NewsDetails from './components/NewsDetails.js';
 import Matches from './pages/Matches';
 import Sports from './pages/Sports';
@@ -16,13 +15,14 @@ const App = () => {
       <Layout />
       <Routes>
         <Route index element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/matches" element={<Matches />} />
-          <Route path="/subcard" element={<SubCard />} />
-          <Route path="*" element={<NoPage />} />
-        </Routes>
-      
+        <Route path="/home" element={<Home />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/matches" element={<Matches />} />
+        <Route path="/NewsDetails" element={<NewsDetails />} />
+        <Route path="/sports" element={<Sports />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+
       <Footer />
     </BrowserRouter>
   );
