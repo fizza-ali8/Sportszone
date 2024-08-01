@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom'; // Import useLocation
 import Card from './NewsCard'; // Adjust the path as necessary
 import cardData from '../Helper/cardData'; // Adjust the path as necessary
-import Footer from '../components/Footer'; // Adjust the path as necessary
+// import Footer from '../components/Footer'; // Adjust the path as necessary
 import '../Style/SubCard.css'; // Ensure this CSS file exists and is properly linked
 
 const NewsDetails = () => {

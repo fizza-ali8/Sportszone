@@ -7,14 +7,14 @@
   }
   
   .horizontal-scrollview {
-    width: 100%; /* Adjust width as needed */
-    margin: 20px 0;
+    width: 95%; /* Adjust width as needed */
+    margin: 0 0;
   }
   
   .matches-container {
     display: flex;
     justify-content: center;
-    width: 95%; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
     margin: 0 auto;
   }
   

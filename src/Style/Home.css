@@ -53,7 +53,7 @@
     position: absolute;
     top: 50%; /* Center vertically */
     transform: translateY(-50%);
-    background-color: #115740FF;
+    background-color: #115740;
     color: white;
     border: none;
     border-radius: 4px; /* Square shape with slight border radius */

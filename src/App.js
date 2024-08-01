@@ -8,6 +8,7 @@ import Sports from './pages/Sports';
 import NewsDetails from './components/NewsDetails.js';
 import Matches from './pages/Matches';
 import Footer from './components/Footer';
+import International from './pages/International.js';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/matches" element={<Matches />} />
           <Route path="/NewsDetails" element={< NewsDetails/>} />
           <Route path="/sports" element={<Sports/>} />
+          <Route path="/International" element={<International/>} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       
