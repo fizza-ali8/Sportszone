@@ -7,20 +7,24 @@
   padding: 100; /* Adjust as necessary */
 }
 
-.flag {
-  height: 90px; /* Adjust height as needed */
-  width: auto;
-  position: absolute; /* Position flags absolutely within the box */
-}
+
 
 .flag.left {
   left: 50px; /* Adjust left position as needed */
   top: 40px; /* Adjust top position as needed */
+  height: 90px; /* Adjust height as needed */
+  width: auto;
+  position: absolute; /* Position flags absolutely within the box */
+
 }
 
 .flag.right {
   right: 90px; /* Adjust right position as needed */
   top: 40px; /* Adjust top position as needed */
+  height: 90px; /* Adjust height as needed */
+  width: auto;
+  position: absolute; /* Position flags absolutely within the box */
+
 }
 
 .player-info {

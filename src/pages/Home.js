@@ -1,10 +1,13 @@
 import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
+
 import '../Style/Home.css'; // Include Home CSS for Home section styles
 import '../Style/Card.css'; // Include Card CSS for card styles
 import '../Style/News.css'; // Include News CSS for News section styles
-import Card from '../components/Card';
+ import NewsCard from '../components/NewsCard';
 import HomeCardData from '../Helper/HomeCardData';
 import cardData from '../Helper/cardData';
+
 
 const Home = () => {
   const cardContainerRef = useRef(null);
@@ -86,7 +89,7 @@ const Home = () => {
         'div',
         { className: 'container' },
         cardData.map((card, index) =>
-          React.createElement(Card, { key: index, card: card })
+          React.createElement(NewsCard, { key: index, card: card })
         )
       )
     )

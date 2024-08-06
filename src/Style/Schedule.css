@@ -41,6 +41,6 @@
 }
 
 .match-result {
-  padding-left: 100px;
-  margin-top: 20px;
+  padding-right: 500px;
+  align-items: center;
 }
