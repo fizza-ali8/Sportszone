@@ -1,0 +1,32 @@
+.match-category-title {
+    display: flex;
+    flex-direction: column;
+margin-bottom: 20px;
+   
+ 
+  }
+  
+  .button-group {
+ 
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button-group p {
+    margin: auto;
+    padding: 10px 20px;
+     font-weight: bold;
+    cursor: pointer;
+   
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  .button-group p:hover:not(.active) {
+    color: #115740; /* Change this to your preferred active color */
+  }
+  
+  .button-group p:active {
+    color: #115740; /* Change this to your preferred active color */
+  }
+  

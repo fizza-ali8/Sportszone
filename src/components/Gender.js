@@ -1,26 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../Style/Gender.css';
 
-
-const Gender = ({ selectedGender, setSelectedGender }) => {
-
-  const handleGenderClick = (gender) => {
-    setSelectedGender(gender);
-  };
-
+const Gender = ({ setSelectedGender, selectedGender }) => {
   return (
-    <div className="gender-toggle">
-      <button
-        className={selectedGender === 'Women' ? 'active' : ''}
-        onClick={() => handleGenderClick('Women')}
-      >
-        Women
-      </button>
-      <button
-        className={selectedGender === 'Men' ? 'active' : ''}
-        onClick={() => handleGenderClick('Men')}
+    <div className="gender-container">
+      <button 
+        className={`gender-button ${selectedGender === 'men' ? 'active' : ''}`} 
+        onClick={() => setSelectedGender('men')}
       >
         Men
+      </button>
+      <button 
+        className={`gender-button ${selectedGender === 'women' ? 'active' : ''}`} 
+        onClick={() => setSelectedGender('women')}
+      >
+        Women
       </button>
     </div>
   );

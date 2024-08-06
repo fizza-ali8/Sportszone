@@ -10,7 +10,7 @@ import Sports from './pages/Sports';
 import Footer from './components/Footer';
 import International from './pages/International.js';
 import Article from './pages/Articles.js';
-
+import ArticleDetail from './components/ArticleDetail';
 const App = () => {
   return (
     <BrowserRouter>
@@ -23,7 +23,8 @@ const App = () => {
           <Route path="/NewsDetails" element={< NewsDetails/>} />
           <Route path="/sports" element={<Sports/>} />
           <Route path="/International" element={<International/>} />
-          <Route path="/articles" element={<Article/>} />  
+          <Route path="/articles" element={<Article/>} />
+          <Route path="/articles/:id" element={<ArticleDetail />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       

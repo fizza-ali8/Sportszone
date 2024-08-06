@@ -1,4 +1,6 @@
 .horizontal-scroll-container {
+
+ 
   overflow-x: auto;
   white-space: nowrap;
   padding: 8px 0;
@@ -13,8 +15,10 @@
 }
 
 .horizontal-scroll-view {
+ 
   display: flex;
   align-items: center;
+
   padding: 0 20px; /* Horizontal padding */
   gap: 20px; /* Adjusts spacing between items */
   scroll-behavior: smooth;

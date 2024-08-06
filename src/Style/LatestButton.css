@@ -1,12 +1,11 @@
 .button-container {
-  float: right;
-  width: 30%;
-  margin-top: 20px;
-  margin-right: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .latest-button {
-  background-color: #115740; 
+  background-color: #1f7457; 
   color: white; 
   padding: 10px 20px;
   border: none; 

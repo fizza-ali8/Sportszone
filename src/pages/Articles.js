@@ -1,19 +1,22 @@
-// App.js
+// Articles.js
 import React from 'react';
+import { Link } from 'react-router-dom';
+import ArticleCard from '../components/ArticleCard';
+import articles from '../Helper/articleData';
 import '../Style/Article.css';
-import articles from '../Helper/articleData.js'; // Importing article data
-import ArticleCard from '../components/ArticleCard.js';
 
-function Article() { // Updated function name to PascalCase for React component convention
+function ArticleList() {
   return (
     <div className="articles-section">
       <div className="article-list">
         {articles.map((article) => (
-          <ArticleCard key={article.id} article={article} />
+          <Link key={article.id} to={`/articles/${article.id}`} className="article-link">
+            <ArticleCard article={article} />
+          </Link>
         ))}
       </div>
     </div>
   );
 }
 
-export default Article;
+export default ArticleList;
