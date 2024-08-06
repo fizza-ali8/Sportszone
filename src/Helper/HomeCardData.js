@@ -12,7 +12,7 @@ const HomeCardData = [
       id: 2,
       text1: "3rd Match - Pakistan Premier League",
       country1: { name: "PAK ARMY", goals: 2, flag: "FLAGS_IMAGES/ARMY.JPEG" },
-      country2: { name: "WAPDA", goals: 1, flag: "FLAGS_IMAGES/WAPADA.JPEG" },
+      country2: { name: "WAPDA", goals:    1, flag: "FLAGS_IMAGES/WAPADA.JPEG" },
       text2: "Pakistan Army won",
     },  {
         id: 3,

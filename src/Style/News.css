@@ -1,44 +1,54 @@
-
 /* src/Style/News.css */
 
 .news-container {
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-padding: 20px; /* Add padding if needed */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px; /* Add padding if needed */
 }
 
 .line-container {
-position: relative;
-margin-bottom: 20px; /* Space below the line */
+  position: relative;
+  margin-bottom: 20px; /* Space below the line */
 }
 
 .line {
-position: relative;
-border-top: 4px solid #115740FF; /* Line style */
-width: 100%; /* Full width */
+  position: relative;
+  border-top: 4px solid #115740FF; /* Line style */
+  width: 100%; /* Full width */
 }
 
 .line-text {
-position: absolute;
-left: 10%; /* Adjust as needed to position the text */
-top: -10px; /* Adjust to align text vertically */
-background-color: white; /* Match the background of your container */
-padding: 0 10px; /* Adjust padding as needed */
-color: rgb(1, 7, 5); /* Text color */
-font-weight: bold; /* Optional: Make the text bold */
+  position: absolute;
+  left: 10%; /* Adjust as needed to position the text */
+  top: -10px; /* Adjust to align text vertically */
+  background-color: white; /* Match the background of your container */
+  padding: 0 10px; /* Adjust padding as needed */
+  color: rgb(1, 7, 5); /* Text color */
+  font-weight: bold; /* Optional: Make the text bold */
 }
 
 .content {
-flex: 1;
-overflow-y: auto;
+  flex: 1;
+  overflow-y: auto;
 }
 
 .container {
-display: flex;
-flex-wrap: wrap;
-width: 100%;
-gap: 20px;
-padding: 20px;
-justify-content: center; 
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center; 
+}
+
+/* Combine the third and sixth cards in a row */
+.card-container-combined {
+  display: flex;
+  flex-direction: row;
+  gap: 0; /* Ensure no gap between combined cards */
+}
+
+.card-container-combined .card-home {
+  margin: 0; /* No margin between combined cards */
 }

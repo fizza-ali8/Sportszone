@@ -63,3 +63,15 @@
     height: 200px; /* Adjust height for mobile */
   }
 }
+
+/* Add styles for combined cards */
+.card-container-combined {
+  display: flex;
+  flex-direction: row;
+  gap: 0; /* Ensure no gap between combined cards */
+}
+
+.card-container-combined .card {
+  margin: 0; /* No margin between combined cards */
+  flex: 1; /* Allow combined cards to take equal space */
+}

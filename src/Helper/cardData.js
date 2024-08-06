@@ -1,5 +1,6 @@
 const cardData = [
   {
+    id:1,
     imageUrl: 'Cards_img/1.jpeg',
     date: '1,12,2022 | 2:13',
     description: ( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>
@@ -7,6 +8,7 @@ const cardData = [
     </span>),
   },
   {
+    id:2,
     imageUrl: 'Cards_img/2.jpeg',
     date: '2,12,2022 | 3:45',
     description:( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>
@@ -14,6 +16,7 @@ const cardData = [
      </span>),
   },
   {
+    id:3,
     imageUrl: 'Cards_img/3.jpeg',
     date: '3,12,2022 | 4:56',
     description:( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>
@@ -21,6 +24,7 @@ const cardData = [
      </span>),
   },
   {
+    id:4,
     imageUrl: 'Cards_img/4.jpeg',
     date: '4,12,2022 | 6:12',
     description: ( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>
@@ -28,6 +32,7 @@ const cardData = [
     </span>),
   },
   {
+    id:5,
     imageUrl: 'Cards_img/5.jpeg',
     date: '5,12,2022 | 7:22',
     description:( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>
@@ -35,6 +40,7 @@ const cardData = [
     </span>),
   },
   {
+    id:6,
     imageUrl: 'Cards_img/6.jpeg',
     date: '6,12,2022 | 8:32',
     description:( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>
@@ -42,6 +48,7 @@ const cardData = [
     </span>),
   },
   {
+    id:7,
     imageUrl: 'Cards_img/7.jpeg',
     date: '7,12,2022 | 9:42',
     description:( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>    
@@ -50,6 +57,7 @@ const cardData = [
     ),
   },
   {
+    id:8,
     imageUrl: 'Cards_img/8.jpeg',
     date: '8,12,2022 | 10:52',
     description:( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>
@@ -57,6 +65,7 @@ const cardData = [
     </span>),
   },
   {
+    id:9,
     imageUrl: 'Cards_img/9.jpeg',
     date: '9,12,2022 | 11:02',
     description:( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>
@@ -64,6 +73,7 @@ const cardData = [
     </span>),
   },
   {
+    id:10,
     imageUrl: 'Cards_img/10.jpeg',
     date: '10,12,2022 | 12:12',
     description:( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>
@@ -71,6 +81,7 @@ const cardData = [
     </span>),
   },
   {
+    id:11,
     imageUrl: 'Cards_img/11.jpeg',
     date: '11,12,2022 | 1:13',
     description: ( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>
@@ -78,6 +89,7 @@ const cardData = [
     </span>),
   },
   {
+    id:12,
     imageUrl: 'Cards_img/12.jpeg',
     date: '12,12,2022 | 1:13',
     description:( <span style={{ fontWeight: 'bold', fontSize: '1.2em' }}>

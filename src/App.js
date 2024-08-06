@@ -6,21 +6,25 @@ import NoPage from './pages/NoPage';
 import News from './pages/News';
 import SubCard from './components/SubCard';
 import Matches from './pages/Matches';
+import Gallery from './pages/Gallery';
 import Footer from './components/Footer';
+import LiveUpdates from './components/LiveUpdates.js'; // Import LiveUpdates component
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Layout/>
-        <Routes>
-        <Route index element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/matches" element={<Matches />} />
-          <Route path="/subcard" element={<SubCard />} />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="news" element={<News />} />
+          <Route path="matches" element={<Matches />} />
+          <Route path="subcard" element={<SubCard />} />
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="live-updates" element={<LiveUpdates />} /> {/* Add LiveUpdates route */}
           <Route path="*" element={<NoPage />} />
-        </Routes>
-      
+        </Route>
+      </Routes>
       <Footer />
     </BrowserRouter>
   );

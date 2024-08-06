@@ -1,5 +1,5 @@
 .home {
-    position: relative; /* Ensure that the buttons can be positioned relative to the container */
+  background-color:rgb(231, 232, 216);
   }
   
   .card-container {
@@ -18,6 +18,8 @@
     width: 300px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     flex: 0 0 auto; /* Ensure cards don’t shrink */
+    align-items: center;     /* Center vertically */
+
   }
   
   /* Style for country-info to display flag, name, and goals in a row */
@@ -52,7 +54,7 @@
   .scroll-button {
     position: absolute;
     top: 50%; /* Center vertically */
-    transform: translateY(-50%);
+    transform: translateY(-90%);
     background-color: #115740FF;
     color: white;
     border: none;
@@ -73,3 +75,8 @@
     right: 10px; /* Position on the right side */
   }
   
+  /* src/Style/Home.css */
+
+.clickable-card {
+  cursor: pointer;
+}
