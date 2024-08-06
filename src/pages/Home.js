@@ -1,8 +1,7 @@
 import React, { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import '../Style/Home.css';
-import '../Style/Card.css';
-import '../Style/News.css';
+import '../Style/Home.css'; // Include Home CSS for Home section styles
+import '../Style/Card.css'; // Include Card CSS for card styles
+import '../Style/News.css'; // Include News CSS for News section styles
 import Card from '../components/Card';
 import HomeCardData from '../Helper/HomeCardData';
 import cardData from '../Helper/cardData';
@@ -68,21 +67,29 @@ const Home = () => {
   );
 
   // Render News content
-  const newsContent = (
-    <div className="news-container">
-      <div className="line-container">
-        <div className="line">
-          <span className="line-text">TOP STORIES</span>
-        </div>
-      </div>
-      <div className="content">
-        <div className="container">
-          {cardData.map((card, index) => (
-            <Card key={index} card={card} />
-          ))}
-        </div>
-      </div>
-    </div>
+  const newsContent = React.createElement(
+    'div',
+    { className: 'news-container' },
+    React.createElement(
+      'div',
+      { className: 'line-container' },
+      React.createElement(
+        'div',
+        { className: 'line' },
+        React.createElement('span', { className: 'line-text' }, 'TOP STORIES')
+      )
+    ),
+    React.createElement(
+      'div',
+      { className: 'content' },
+      React.createElement(
+        'div',
+        { className: 'container' },
+        cardData.map((card, index) =>
+          React.createElement(Card, { key: index, card: card })
+        )
+      )
+    )
   );
 
   // Combine Home and News content

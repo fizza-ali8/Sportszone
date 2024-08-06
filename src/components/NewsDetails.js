@@ -1,11 +1,11 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom'; // Import useLocation
-import Card from '../components/Card'; // Adjust the path as necessary
+import Card from './NewsCard'; // Adjust the path as necessary
 import cardData from '../Helper/cardData'; // Adjust the path as necessary
-import Footer from '../components/Footer'; // Adjust the path as necessary
+// import Footer from '../components/Footer'; // Adjust the path as necessary
 import '../Style/SubCard.css'; // Ensure this CSS file exists and is properly linked
 
-const SubCard = () => {
+const NewsDetails = () => {
   const location = useLocation();
   const card = location.state?.card; // Access the card data passed from News.js
 
@@ -59,4 +59,4 @@ const SubCard = () => {
   );
 };
 
-export default SubCard;
+export default NewsDetails;

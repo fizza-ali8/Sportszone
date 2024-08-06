@@ -1,0 +1,49 @@
+.horizontal-scroll-container {
+
+ 
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 8px 0;
+  background-color: rgb(255, 255, 255);
+  height: 45px; /* Increased to ensure content is visible */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.horizontal-scroll-view {
+ 
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px; /* Horizontal padding */
+  gap: 20px; /* Adjusts spacing between items */
+  scroll-behavior: smooth;
+  height: 100%; /* Makes the view take the full height of the container */
+}
+
+.scroll-item {
+  color: black;
+  background-color: white;
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 25px;
+  height: 20px; /* Increased to ensure buttons are not clipped */
+  min-width: 90px; /* Ensure width is consistent */
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap; /* Ensures text doesn't wrap */
+  flex-shrink: 0; /* Prevents items from shrinking */
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers text vertically and horizontally */
+}
+
+.scroll-item.selected {
+  background-color: #115740;
+  color: white;
+}

@@ -1,29 +1,24 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
+/* Navbar styling */
 .main-nav {
   background-color: white;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column; /* Ensure items stack vertically */
-  align-items: center; /* Vertical alignment */
-  justify-content: space-around; /* Horizontal alignment */
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu-link {
-  font-size: 12px;
-  flex-grow: 1;
+  padding-top: 10px;
   width: 100%;
 }
 
 .menu-link ul {
   list-style: none;
   display: flex;
-  justify-content: space-around; /* Horizontal alignment of list items */
+  justify-content: space-around;
   padding: 0;
   margin: 0;
-  flex-wrap: wrap; /* Allow items to wrap within the container */
 }
 
 .menu-link ul li {
@@ -34,29 +29,38 @@
   text-decoration: none;
   color: #333;
   font-family: 'Roboto', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 15px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .menu-link ul li a:hover {
-  text-decoration: underline;
-  color: #007bff;
+  color: #115740;
 }
 
-.menu-link img {
-  max-width: 100%;
-  height: auto;
+.menu-link ul li.active a {
+  color: #115740; /* Color for active item */
+   
 }
 
-/* Styles for the line and text below the navbar */
+/* Line below the navbar */
 .navbar-line {
+  width: 100%;
+  height: 5px;
+  background-color: #115740; /* Color of the line */
+  margin-top: 17px;
+  margin-bottom: 14px;
   position: relative;
-  border-top: 4px solid #115740FF; /* Adjust the color of the line */
-  margin-top: 40px; /* Gap between navbar and line */
-  width: 100%; /* Make the line span the full width */
 }
 
 .navbar-text {
+  display: block;
+  text-align: center;
+  color: #115740;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   position: absolute;
   left: 10%; /* Adjust as needed to position text */
   top: -20px; /* Adjust to vertically align with the line */
@@ -68,42 +72,21 @@
   font-weight: bold;
 }
 
-/* Media queries for responsiveness */
+/* Responsive design */
 @media (max-width: 768px) {
-  .main-nav {
-    flex-direction: column; /* Ensure items stay stacked vertically */
-    align-items: center;
-    padding: 10px;
-  }
-
   .menu-link ul {
-    justify-content: center; /* Center items within the container */
-    flex-wrap: nowrap; /* Prevent items from wrapping */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
-  }
-
-  .menu-link ul li {
-    margin: 0 5px;
+    flex-wrap: wrap;
   }
 
   .menu-link ul li a {
     font-size: 14px;
   }
-
-  .menu-link img {
-    margin-top: 10px;
-  }
 }
 
 @media (max-width: 480px) {
-  .main-nav {
-    padding: 5px;
-  }
-
   .menu-link ul {
-    justify-content: center; /* Center items within the container */
-    flex-wrap: nowrap; /* Prevent items from wrapping */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
 
   .menu-link ul li {
@@ -112,9 +95,5 @@
 
   .menu-link ul li a {
     font-size: 12px;
-  }
-
-  .menu-link img {
-    margin-top: 5px;
   }
 }

@@ -3,11 +3,11 @@ import '../Style/Card.css';
 import { useNavigate } from 'react-router-dom';
 
 
-const Card = ({ card }) => {
+const NewsCard = ({ card }) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate('/SubCard'); // Change to your desired route
+    navigate('/NewsDetails'); // Change to your desired route
   };
 
   return (
@@ -21,4 +21,4 @@ const Card = ({ card }) => {
   );
 };
 
-export default Card;
+export default NewsCard;
