@@ -13,6 +13,7 @@ const News = () => {
     <div className="news-container">
       <div className="content">
         <div className="container">
+          
           {cardData.map((card, index) => (
             <NewsCard key={index} card={card} />
           ))}

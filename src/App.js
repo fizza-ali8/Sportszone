@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import International from './pages/International.js';
 import Article from './pages/Articles.js';
 import ArticleDetail from './components/ArticleDetail';
+import LiveScreen from './pages/LiveScreen.js';
 const App = () => {
   return (
     <BrowserRouter>
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/International" element={<International/>} />
           <Route path="/articles" element={<Article/>} />
           <Route path="/articles/:id" element={<ArticleDetail />} />
+          <Route path="/LiveScreen" element={<LiveScreen />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       

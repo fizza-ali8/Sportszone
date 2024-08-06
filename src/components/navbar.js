@@ -30,7 +30,7 @@ const Navbar = () => {
       case '/gallery':
         setSelected('Gallery');
         break;
-      case '/livestream':
+      case '/LiveScreen':
         setSelected('Live');
         break;
       default:
@@ -65,7 +65,7 @@ const Navbar = () => {
             <Link to="/gallery" onClick={() => setSelected('Gallery')}>Gallery</Link>
           </li>
           <li className={selected === 'Live' ? 'active' : ''}>
-            <Link to="/livestream" onClick={() => setSelected('Live')}>Live</Link>
+            <Link to="/LiveScreen" onClick={() => setSelected('Live')}>Live</Link>
           </li>
         </ul>
       </div>

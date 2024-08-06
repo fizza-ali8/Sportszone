@@ -57,7 +57,7 @@ const MatchCardData = [
         flag2: "/path/to/england-flag.png",
         date: "October 7, 2024",
         time: "10:00 am",
-        stadium: "Mulan Cricket Stadium, Mulan"
+        stadium: "Multan Cricket Stadium, Multan"
     },
     {
         series: "1st Test - ENG in PAK, 3 Tests, 2024",
@@ -67,7 +67,7 @@ const MatchCardData = [
         flag2: "/path/to/england-flag.png",
         date: "October 7, 2024",
         time: "10:00 am",
-        stadium: "Mulan Cricket Stadium, Mulan"
+        stadium: "Multan Cricket Stadium, Multan"
     },
 
 ];

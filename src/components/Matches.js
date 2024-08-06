@@ -1,12 +1,12 @@
 import React from 'react';
 import '../Style/Matches.css';
 import MatchCard from './MatchCard';
-import MatchCardData from '../Helper/MatchCardData';
 
-const Matches = () => {
+
+const Matches = ({matchesdata}) => {
   return (
     <div className="matches">
-      {MatchCardData.map((match, index) => (
+      {matchesdata.map((match, index) => (
         <MatchCard
           key={index}
           series={match.series}
