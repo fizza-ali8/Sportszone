@@ -1,28 +1,22 @@
-import React, { useState } from 'react';
+// src/components/SectionBar.js
+import React from 'react';
 import '../Style/SectionBar.css';
 
-
-const SectionBar = () => {
-  const [selectedSection, setSelectedSection] = useState('Matches');
-
-  const handleSectionClick = (section) => {
-    setSelectedSection(section);
-  };
-
+const SectionBar = ({ setSelectedSection, selectedSection }) => {
   return (
     <div className="section-bar">
-      <button
-        className={selectedSection === 'Matches' ? 'active' : ''}
-        onClick={() => handleSectionClick('Matches')}
+      <p  
+        className={selectedSection === 'matches' ? 'active' : ''} 
+        onClick={() => setSelectedSection('matches')}
       >
         Matches
-      </button>
-      <button
-        className={selectedSection === 'Squad' ? 'active' : ''}
-        onClick={() => handleSectionClick('Squad')}
+      </p>
+      <p 
+        className={selectedSection === 'squad' ? 'active' : ''} 
+        onClick={() => setSelectedSection('squad')}
       >
         Squad
-      </button>
+      </p>
     </div>
   );
 };

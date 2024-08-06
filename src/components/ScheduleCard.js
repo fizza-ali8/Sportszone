@@ -20,7 +20,7 @@ const ScheduleCard = ({ card }) => {
       </div>
       <div className="match-details">
       <div className="match-location">{card.venue}</div>
-        <div className="match-date">{card.date}</div>
+      <div className="match-date">{card.date}</div>
       </div>
     </div>
   );

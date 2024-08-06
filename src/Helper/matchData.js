@@ -1649,6 +1649,8 @@ const kabaddiData = [
   },
 ];
 
+
+
 export {
   cricketData,
   footballData,
@@ -1663,4 +1665,5 @@ export {
   tentPeggingData,
   kabaddiData,
 };
+
 
