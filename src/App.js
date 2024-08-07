@@ -14,7 +14,7 @@ import International from './pages/International.js';
 import Article from './pages/Articles';
 import ArticleDetail from './components/ArticleDetail';
 import LiveScreen from './pages/LiveScreen.js';
-import SubCard from './components/NewsDetails'; // Ensure this import is correct and the file exists
+import NewsDetail from './components/NewsDetails.js'; // Ensure this import is correct and the file exists
 
 const App = () => {
   return (
