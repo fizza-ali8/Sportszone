@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../Style/navbar.css'; // Assuming your CSS file is in the specified path
+import { useTheme } from '../components/ThemeContext';
 
 const Navbar = () => {
   const [selected, setSelected] = useState('Home');
   const location = useLocation();
+  const { isDarkMode } = useTheme(); // Accessing the current theme
 
   useEffect(() => {
     const path = location.pathname;
@@ -40,7 +42,7 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <nav className='main-nav'>
+    <nav className={`main-nav ${isDarkMode ? 'dark-nav' : ''}`}>
       <div className='menu-link'>
         <ul>
           <li className={selected === 'Home' ? 'active' : ''}>

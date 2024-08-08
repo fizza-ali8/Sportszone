@@ -1,23 +1,22 @@
 .schedule-card {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 10px 20px;
-  border: 1px solid #ebebeb;
-  border-radius: 5px;
-  margin: 20px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-.match-info {
+.left-side {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
-.match {
-  font-size: 16px;
+.series-name {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .teams {
@@ -36,27 +35,24 @@
   margin-bottom: 0;
 }
 
-.flag {
+.team-flag {
   width: 40px;
   height: 25px;
   margin-right: 10px;
   border-radius: 0;
 }
 
-.match-date{
-  margin-top: 40px;
-}
-
-
-
-.match-details {
-  text-align: right;
+.right-side {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  text-align: right;
 }
 
+.location {
+  margin-bottom: auto;
+}
 
-.match-location {
-  margin-top: auto; /* No additional styles needed here unless you want to adjust spacing */
+.date {
+  margin-top: auto;
 }
