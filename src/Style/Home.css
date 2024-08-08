@@ -1,82 +1,159 @@
 .home {
-  background-color:rgb(231, 232, 216);
-  }
-  
-  .card-container {
-    display: flex;
-    padding: 10px;
-    overflow: hidden; /* Remove scrollbar */
-    margin: 0 50px; /* Add space for the buttons */
-  }
-  
-  .card-home {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 10px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex: 0 0 auto; /* Ensure cards don’t shrink */
-    align-items: center;     /* Center vertically */
+  background-color: rgb(231, 232, 216);
+}
 
-  }
-  
-  /* Style for country-info to display flag, name, and goals in a row */
-  .country-info {
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-  }
-  
-  .country-info img {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-right: 10px; /* Space between flag and text */
-  }
-  
-  .country-info .country-name-goals {
-    display: flex;
-    align-items: center;
-  }
-  
-  .country-info .country-name-goals span {
-    margin-right: 80px; /* Space between name and goals */
-  }
-  
-  /* Additional styling for the rest of the card */
-  .blue-text {
-    color: blue;
-  }
-  
-  /* Style for the scroll buttons */
-  .scroll-button {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    transform: translateY(-90%);
-    background-color: #115740FF;
-    color: white;
-    border: none;
-    border-radius: 4px; /* Square shape with slight border radius */
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 10;
-  }
-  
-  .scroll-button.left {
-    left: 10px; /* Position on the left side */
-  }
-  
-  .scroll-button.right {
-    right: 10px; /* Position on the right side */
-  }
-  
-  /* src/Style/Home.css */
+.card-container {
+  display: flex;
+  padding: 10px;
+  overflow: hidden; /* Remove scrollbar */
+  margin: 0 50px; /* Add space for the buttons */
+}
+
+.card-home {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 0 0 auto; /* Ensure cards don’t shrink */
+  align-items: center; /* Center vertically */
+}
+
+/* Style for country-info to display flag, name, and goals in a row */
+.country-info {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.country-info img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px; /* Space between flag and text */
+}
+
+.country-info .country-name-goals {
+  display: flex;
+  align-items: center;
+}
+
+.country-info .country-name-goals span {
+  margin-right: 80px; /* Space between name and goals */
+}
+
+/* Additional styling for the rest of the card */
+.blue-text {
+  color: blue;
+}
+
+/* Style for the scroll buttons */
+.scroll-button {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-90%);
+  background-color: #115740FF;
+  color: white;
+  border: none;
+  border-radius: 4px; /* Square shape with slight border radius */
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.scroll-button.left {
+  left: 10px; /* Position on the left side */
+}
+
+.scroll-button.right {
+  right: 10px; /* Position on the right side */
+}
 
 .clickable-card {
   cursor: pointer;
+}
+
+/* Gallery section styles */
+.gallery-section {
+  width: 100%;
+  padding: 20px;
+}
+
+.row1 {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.gallery-card11 {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Specific styles for the special gallery card */
+.gallery-card11.special-gallery-card11 {
+  background-color: #f4f4f4; /* Different background color */
+  padding: 20px; /* Adjust padding */
+  border: 1px solid #ddd; /* Different border style */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Different shadow */
+}
+
+.gallery-card11 img {
+  width: 100%;
+  height: 40%;
+  border-radius: 8px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Snap to each image */
+  width: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  scroll-snap-align: start; /* Align images to the start of the container */
+  margin-right: 10px; /* Space between images */
+}
+
+.empty-card {
+  visibility: hidden;
+}
+
+/* Line container styles */
+.line-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.line {
+  width: 80%;
+  border-top: 2px solid black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.line-text2 {
+  background-color: white;
+  padding: 0 10px;
+  position: absolute;
+  left: 10%;
+  top: -14px;
+  font-size: 20px;
+  color: #115740;
 }
