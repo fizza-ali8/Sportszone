@@ -1,0 +1,77 @@
+/* src/Style/Card.css */
+
+.card {
+  flex: 1 0 30%; /* Default to 30% width for three cards in a row */
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer; /* Makes the card clickable */
+  transition: transform 0.2s; /* Add transition for hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Fixed height for the images */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.card-body {
+  padding: 10px;
+  background-color: #fff; /* Ensure a background color for better text visibility */
+}
+
+.card-body p {
+  margin: 5px 0;
+}
+
+.card-body .date {
+  color: lightblue; /* Changed color to light blue */
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 0 30%; /* Adjust width for medium screens */
+  }
+
+  .card img {
+    height: 180px; /* Adjust height for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 0 45%; /* Adjust width for tablets */
+  }
+
+  .card img {
+    height: 150px; /* Adjust height for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    flex: 1 0 100%; /* Full width for mobile */
+  }
+
+  .card img {
+    height: 200px; /* Adjust height for mobile */
+  }
+}
+
+/* Add styles for combined cards */
+.card-container-combined {
+  display: flex;
+  flex-direction: row;
+  gap: 0; /* Ensure no gap between combined cards */
+}
+
+.card-container-combined .card {
+  margin: 0; /* No margin between combined cards */
+  flex: 1; /* Allow combined cards to take equal space */
+}

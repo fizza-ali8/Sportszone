@@ -1,0 +1,122 @@
+.live-updates-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #E7E8D8; /* Background color updated */
+  }
+  
+  .scrolling-cards-container {
+    flex: 0 0 auto; /* Ensure it doesn't grow or shrink */
+    margin-bottom: 20px; /* Space between sections */
+  }
+  
+  .live-updates-content {
+    flex: 1; /* Allow this section to grow */
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .flag-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between rows */
+  }
+  
+  .flag-text-row {
+    display: flex;
+    padding-left: 10px; /* Adds left padding */
+  }
+  
+  .flag-image {
+    margin-right: 400px; /* Adds space between flag and text */
+    width: 124px; 
+    height: 102px; 
+    padding-left: 150px;
+  }
+  
+  .flag-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  footer {
+    flex-shrink: 0; /* Prevent footer from shrinking */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #115740FF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: 20px; /* Adds space above the centered container */
+  }
+  
+  .container {
+    width: 1195px; 
+    background: #FFFFFFFF; 
+    border-radius: 3px; 
+    border-width: 2px; /* Bold border */
+    border-color: #BDC1CAFF; 
+    /* border-style: solid;  */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box;
+  }
+  
+  .text-line-row {
+    display: flex;
+ 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  .label {
+    margin-right: 10px;
+  }
+  
+  .value {
+    margin-left: auto;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust this value as needed */
+  }
+  
+  .button-container button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .button-container button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+  }
+  
+  .scroll-button.left {
+    left: 10px;
+  }
+  
+  .scroll-button.right {
+    right: 10px;
+  }

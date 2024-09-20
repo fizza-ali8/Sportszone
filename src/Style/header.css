@@ -1,0 +1,145 @@
+.header {
+  display: flex;
+  background-color: #115740;
+  align-items: center; /* Vertical alignment */
+  justify-content: space-between; /* Horizontal alignment */
+  padding-right:  20px;
+  box-shadow: 0 2px 4px #115740;
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+}
+
+.logo {
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  
+}
+
+.logo img {
+  margin-right: 30px;
+
+  height: 50px;
+}
+
+.searchbar {
+  background-color: #115740;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  flex-shrink: 0;
+  margin-left: auto; /* Ensure it stays to the right */
+}
+
+.searchbar input {
+  width: 200px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #115740;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-button {
+  background-color: #115740;
+  border: none;
+  padding: 5px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-button img {
+  height: 30px;
+}
+
+.nightmode-button {
+  background-color: #115740;
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nightmode-button img {
+  height: 30px;
+  width: 30px;
+}
+
+.earth-logo {
+  height: 30px;
+  cursor: pointer;
+  size: 90%;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row; /* Ensure items stay in a row */
+    align-items: center;
+    padding: 10px;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .logo {
+    margin-right: auto; /* Ensure it stays to the left */
+  }
+
+  .searchbar input {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .search-button img {
+    height: 24px;
+  }
+
+  .nightmode-button {
+    padding: 5px;
+  }
+
+  .nightmode-button img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .earth-logo {
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: row; /* Ensure items stay in a row */
+    align-items: center;
+    padding: 5px;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .logo {
+    margin-right: auto; /* Ensure it stays to the left */
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .searchbar input {
+    font-size: 12px;
+    width: auto; /* Adjust width to fit content */
+  }
+
+  .search-button img {
+    height: 20px;
+  }
+
+  .nightmode-button {
+    padding: 3px;
+  }
+
+  .nightmode-button img {
+    height: 16px;
+    width: 16px;
+  }
+
+  .earth-logo {
+    height: 20px;
+  }
+}
+

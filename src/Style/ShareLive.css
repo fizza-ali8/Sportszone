@@ -1,0 +1,45 @@
+.share-live {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.share-live span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.share-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.share-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    border-radius: 50%; /* Circular icons */
+    border: 2px solid #ccc; /* Border width and color */
+    background: #f9f9f9; /* Background color */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.share-icon img {
+    width: 24px; /* Adjust image size */
+    height: 24px; /* Adjust image size */
+}
+
+.share-icon:hover {
+    background: #e0e0e0; /* Background color on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.share-icon:active {
+    background: #d0d0d0; /* Background color when clicked */
+}

@@ -1,0 +1,62 @@
+/* ArticleCard.css */
+.article-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.article-image {
+  flex: 0 0 200px; /* Fixed width for the image container */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5; /* Optional background color */
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article-content {
+  padding: 15px;
+  flex: 1; /* Makes the content area flexible to take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Aligns content from top to bottom */
+}
+
+.article-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #056E46;
+}
+
+.article-header h2 {
+  margin: 0;
+  font-size: 1.2em;
+  flex: 1; /* Ensures header title takes up remaining space */
+}
+
+.article-content p {
+  margin: 10px 0;
+  line-height: 1.5; /* Enhances readability */
+}

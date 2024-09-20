@@ -1,0 +1,15 @@
+.commentary {
+    border: 1px solid black; /* Solid black border */
+    padding: 20px; /* Add padding inside the box */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    margin: 50px; /* Remove default margin */
+height: 250px;
+
+    
+  }
+  
+  .commentary p {
+    margin: 0; /* Remove default margin */
+    font-weight: bold;
+  }
+  

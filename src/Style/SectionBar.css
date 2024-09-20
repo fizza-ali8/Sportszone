@@ -1,0 +1,27 @@
+/* src/Style/SectionBar.css */
+.section-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.section-bar p {
+
+  color: #0f0f0f;
+
+  padding: 10px 20px;
+  font-size: 20px;
+  margin:auto;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.section-bar p.active {
+  color: #115740; /* Change this to your preferred active color */
+ 
+ 
+}
+
+.section-bar p:hover:not(.active) {
+  color: #115740;
+}

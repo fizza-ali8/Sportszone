@@ -1,0 +1,46 @@
+/* Schedule.css */
+.schedule-box {
+  border: 1px solid black;
+  padding-left: 240px;
+  margin: 40px;
+  width: 850px;
+  position: relative;
+}
+
+.match-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.match {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.flag1 {
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+  padding-left: 120px;
+  padding-bottom: 10px;
+}
+
+.country-name {
+  align-items: center;
+  margin-right: 70px;
+}
+
+.score {
+  margin-left: 110px;
+}
+
+.match-heading {
+  padding-right: 200px;
+  margin-bottom: 40px;
+}
+
+.match-result {
+  padding-right: 500px;
+  align-items: center;
+}

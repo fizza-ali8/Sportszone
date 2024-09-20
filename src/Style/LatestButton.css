@@ -1,0 +1,20 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.latest-button {
+  background-color: #1f7457; 
+  color: white; 
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 30px; 
+  font-size: 16px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.latest-button:hover {
+  background-color: #0d3223; 
+}

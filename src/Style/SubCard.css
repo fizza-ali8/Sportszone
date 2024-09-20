@@ -1,0 +1,46 @@
+.subcard-container {
+    text-align: center;
+}
+
+.subcard-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.subcard-image {
+    width: 95%;
+    height: 70%; /* Adjust as needed */
+    margin-bottom: 1em;
+}
+
+.subcard-text {
+    text-align: left; /* Align text to the left */
+    padding-left: 2em; /* Add left padding */
+    margin-bottom: 1em;
+    position: relative; /* For positioning pseudo-element */
+    padding-bottom: 5em; /* Space between text and the line (adjusted) */
+}
+
+.subcard-text::after {
+    content: ""; /* Empty content for pseudo-element */
+    display: block;
+    width: calc(95% - 4em); /* Full width minus horizontal padding */
+    border-bottom: 3px solid #ccc; /* Line under the text */
+    position: absolute;
+    left: 2em; /* Horizontal padding for the line */
+    bottom: 0; /* Position at the bottom of the parent container */
+    padding: 0 2em; /* Adjust horizontal padding if necessary */
+}
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: center;
+    gap: 1em; /* Adjust spacing between cards */
+    margin-top: 5em; /* Space between the line and cards */
+}
+
+.footer-expanded {
+    width: 100%; /* Adjust width as needed */
+    /* Add other styles if needed */
+}
